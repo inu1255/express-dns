@@ -4,7 +4,7 @@
  * Author: inu1255
  * E-Mail: 929909260@qq.com
  * -----
- * Last Modified: 2017-10-11 15:05:28
+ * Last Modified: 2017-10-11 15:21:43
  * Modified By: inu1255
  * -----
  * Copyright (c) 2017 gaomuxuexi
@@ -14,7 +14,7 @@ const app = express();
 const dns = require('dns');
 
 app.get("/lookup/*", function(req, res) {
-    const hostname = req.path.slice(8);
+    const hostname = new Buffer(req.path.slice(8), "base64").toString().replace(/\s/, "");
     if (!hostname) {
         res.json([]);
         return;
