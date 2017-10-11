@@ -1,0 +1,25 @@
+{
+  "name": "express-dns",
+  "version": "1.0.0",
+  "description": "a web app to lookup dns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inu1255/express-dns.git"
+  },
+  "keywords": [
+    "dns"
+  ],
+  "author": "inu1255",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inu1255/express-dns/issues"
+  },
+  "homepage": "https://github.com/inu1255/express-dns#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
